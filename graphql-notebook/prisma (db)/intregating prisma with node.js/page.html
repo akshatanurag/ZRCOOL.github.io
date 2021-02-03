@@ -1,0 +1,60 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>intregating prisma with node.js</title>
+</head><body>Follow this : <a href="https://github.com/Urigo/graphql-cli/blob/master/docs/MIGRATION.md">https://github.com/Urigo/graphql-cli/blob/master/docs/MIGRATION.md</a> <br/>
+<br/>
+<b>STEPS: <br/>
+<br/>
+</b><b>1. </b>npm install graphql-cli --save<br/>
+<b>2. </b>npm i @graphql-cli/codegen @graphql-codegen/schema-ast --save<br/>
+<b>3. </b>Make a file named <b>.graphqlrc.yml (in root)<br/>
+</b><b>4. </b>Make a new folder in src name as <b>generated<br/>
+</b><b>5. </b>Paste the following inside the file <b>.graphqlrc.yml </b><ul><b><li style="list-style-type: none">projects: </li>
+<li style="list-style-type: none"><ul><li style="list-style-type: none">app: </li>
+</ul>
+</li>
+</b></ul>
+<b><ul><ul><ul>schema:<span style="color: #ffffff"/></ul>
+</ul>
+</ul>
+<span style="font-family: Consolas"><span style="background-color: #ffffff"><span style="color: #191919"><span style="font-size: 10pt">http://192.168.99.100:4466/</span></span></span></span><span style="background-color: #ffffff"><span style="color: #191919"><span style="font-size: 10pt"/></span></span></b><ul><li style="list-style-type: none"><ul><b><li style="list-style-type: none"><ul><li style="list-style-type: none"/>
+</ul>
+</li>
+<li style="list-style-type: none">database: </li>
+</b><li style="list-style-type: none"><ul><b><li style="list-style-type: none">schema: prisma/prisma.yml </li>
+<li style="list-style-type: none">extensions: </li>
+</b><li style="list-style-type: none"><ul><b><li style="list-style-type: none">codegen: </li>
+</b><li style="list-style-type: none"><ul><b><li style="list-style-type: none">generates: ./src/generated/prisma.graphql: </li>
+</b><li style="list-style-type: none"><ul><b><li style="list-style-type: none">plugins: </li>
+</b></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul><ul><ul><ul><ul><ul><ul><b>- schema-ast</b></ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+<br/>
+<b>5. </b>Under script in package.json paste the following - <span style="font-family: Consolas"><span style="font-size: 10pt"><span style="background-color: #ffffff"><span style="color: #191919"><b>&quot;get-schema&quot;:&quot;graphqlcodegen--projectdatabase&quot;</b></span></span></span></span><span style="font-size: 10pt"><span style="background-color: #ffffff"><span style="color: #191919"><b> <br/>
+</b></span></span></span><span style="font-size: 10pt"><span style="background-color: #ffffff"><span style="color: #191919"><b><br/>
+</b></span></span></span><img height="115" src="image.png" width="650"/><br/>
+<br/>
+<b>6. </b>Make a new file in src folder named as <b>prisma.js </b>and type the following iside it. <b>note</b>typeDefs point to <b>setp 4 generated folder</b><br/>
+<img height="132" src="image 2.png" width="450"/><br/>
+<br/>
+<b>7. </b>Wirte any graphql queries here<br/>
+<img height="83" src="image 3.png" width="650"/><br/>
+<br/>
+<b>8. </b>Import the <b>prisma.js</b>file in <b>app.js<br/>
+</b><img src="image 4.png"/></body></html>

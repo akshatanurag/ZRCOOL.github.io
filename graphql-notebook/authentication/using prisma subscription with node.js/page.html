@@ -1,0 +1,12 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>using prisma subscription with node.js</title>
+</head><body><span style="font-size: 12pt">Before prisma in order to make a subscription we had to make several calls to pubsub.publish throughout our resolver functions. However with the addition of prisma, subscription is handled under the hood. All we need to do is call <b>prisma.subscription<br/>
+</b><b><br/>
+</b></span><div style="text-align: center"><img src="image.png"/><br/>
+</div><div style="text-align: left"><span style="font-size: 12pt">Now, if you see the schema of prisma, it returns everything (the updated data in node field) so we make changes to our schema accordingly<br/>
+<br/>
+</span></div><div style="text-align: center"><img src="image 2.png"/><br/>
+</div><div style="text-align: left"><span style="font-size: 12pt">This is how our schema looks now<br/>
+</span></div><div style="text-align: center"><img src="image 3.png"/></div></body></html>

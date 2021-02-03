@@ -1,0 +1,11 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>customize-relationships</title>
+</head><body><span style="font-size: 13pt">prisma provides us with a <b>relation</b>directive, that helps us to customize relationships between existing relations. For example when a user gets deleted all it's post and comments should be deleted as well.<br/>
+<br/>
+</span><img src="image.png"/><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt"><br/>
+As it can be seen here.<br/>
+1. We are setting <b>onDelete</b>Job to <b>CASCADE</b>which means if a job gets deleted all it's applicants should also be removed<br/>
+2. In the applicants we setting <b>onDelete</b>relation to <b>SET_NULL (default behaviour)</b>that means removing a individual applicant should not remove a Job</span></body></html>

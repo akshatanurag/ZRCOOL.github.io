@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<style>
+.node
+{
+    padding-left: 20px;
+    display: block;
+}
+
+.node_collapsed
+{
+    padding-left: 20px;
+    display: none;
+
+    
+    visibility: hidden;
+    display: none;
+}
+
+
+
+a:active
+{
+text-decoration:none;
+color: #0000FF;
+font-weight: bold;
+}
+
+a:visited
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:link
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #500;
+font-weight: bold;
+}
+
+</style>
+
+
+<script language="javascript">
+  
+    var displayStates = [];
+
+    function showDiv(div)
+    {    
+        div.style.height     = "";
+        div.style.display    = "block";
+        div.style.visibility = "visible";
+    }
+
+    function hideDiv(div)
+    {
+        div.style.height     = "0px";
+        div.style.display    = "none";      
+        div.style.visibility = "hidden";
+    }
+
+    function toggleDiv(div, defaultState)
+    {
+
+        // set default on first use
+        if (displayStates[div] == undefined)
+            displayStates[div] = defaultState;
+
+        // toggle state
+        displayStates[div] = !displayStates[div];       
+
+        // hide / show
+        if (displayStates[div])
+            showDiv(div);
+        else {
+            hideDiv(div);
+        }
+    }
+
+    function toggleDivName(divname, defaultState)
+    {
+        toggleDiv(document.getElementById(divname), defaultState);
+    }
+
+</script>
+
+<nobr><tt><a href='javascript: toggleDivName("16d66b40-54ae-4795-a2d8-e8ccbf8ddec7", true)'>+</a>&nbsp;</tt>graphql-notebook</nobr><br/>
+<div id='16d66b40-54ae-4795-a2d8-e8ccbf8ddec7' class='node'><nobr><tt><a href='javascript: toggleDivName("f8e0f4e6-9ff9-40ab-8cb6-32080e811b20", true)'>+</a>&nbsp;</tt>GraphQL Basics Schemas and Queries</nobr><br/>
+<div id='f8e0f4e6-9ff9-40ab-8cb6-32080e811b20' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/basics/page.html' target='viewer'>basics</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/what%20is%20a%20graph/page.html' target='viewer'>what is a graph</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/graphql%20queries/page.html' target='viewer'>GraphQL queries</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/nested%20graphql%20queries/page.html' target='viewer'>nested graphql queries</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/installing%20babel/page.html' target='viewer'>installing babel</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/setting%20up%20graphql%20api/page.html' target='viewer'>setting up graphQL API</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/graph%20ql%20scalar%20types/page.html' target='viewer'>Graph QL scalar types</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/create%20custom%20types/page.html' target='viewer'>create custom types</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/passing%20data%20from%20clinet%20to%20server%20%28ope/page.html' target='viewer'> passing data from clinet to server (operation arguments)</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/arrays/page.html' target='viewer'>arrays</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='graphql%20basics%20schemas%20and%20queries/relationship%20b-w%20types/page.html' target='viewer'>relationship b/w types</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("9b64cef5-13f5-4ade-9b90-86d8afb37398", true)'>+</a>&nbsp;</tt>Mutations</nobr><br/>
+<div id='9b64cef5-13f5-4ade-9b90-86d8afb37398' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='mutations/mutation/page.html' target='viewer'>mutation</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='mutations/user%20rest%20%20spread/page.html' target='viewer'>user rest &amp; spread</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='mutations/input%20type/page.html' target='viewer'>input type</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='mutations/delete/page.html' target='viewer'>delete</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("deedf5c3-db44-4eaf-ab8f-cae023e330be", false)'>+</a>&nbsp;</tt>subscription</nobr><br/>
+<div id='deedf5c3-db44-4eaf-ab8f-cae023e330be' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='subscription/basics/page.html' target='viewer'>basics</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='subscription/making%20changes%20on%20mutation/page.html' target='viewer'>making changes on mutation</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='subscription/enums/page.html' target='viewer'>enums</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("530284e4-3051-42b6-8666-26aae33b44ba", false)'>+</a>&nbsp;</tt>prisma (db)</nobr><br/>
+<div id='530284e4-3051-42b6-8666-26aae33b44ba' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/basic/page.html' target='viewer'>basic</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/setup/page.html' target='viewer'>setup</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/intregating%20prisma%20with%20node.js/page.html' target='viewer'>intregating prisma with node.js</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/using%20async%20%20await/page.html' target='viewer'>using async &amp; await</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/check%20if%20data%20exists/page.html' target='viewer'>check if data exists</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='prisma%20%28db%29/customize-relationships/page.html' target='viewer'>customize-relationships</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("71519a0c-4532-4c7c-86c1-79049d0478d5", false)'>+</a>&nbsp;</tt>authentication</nobr><br/>
+<div id='71519a0c-4532-4c7c-86c1-79049d0478d5' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/adding%20prisma%20to%20graphql%20queries/page.html' target='viewer'>adding prisma to graphql queries</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/inegrating%20oparation%20args/page.html' target='viewer'>inegrating oparation args</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/refactroring%20custom%20type%20resolvers/page.html' target='viewer'>refactroring custom type resolvers</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/adding%20prima%20to%20graphql%20mutations/page.html' target='viewer'>adding prima to graphql mutations</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/using%20prisma%20subscription%20with%20node.js/page.html' target='viewer'>using prisma subscription with node.js</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/closing%20prisma%20api%20from%20outside%20world/page.html' target='viewer'>closing prisma api from outside world</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/locking%20down%20fields/page.html' target='viewer'>locking down fields</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/fargments/page.html' target='viewer'>fargments</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='authentication/locking%20down%20subscription/page.html' target='viewer'>locking down subscription</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("150b883b-2b67-45c6-9268-bc2f28e46d35", false)'>+</a>&nbsp;</tt>pagination &amp; sorting</nobr><br/>
+<div id='150b883b-2b67-45c6-9268-bc2f28e46d35' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt><a href='pagination%20%20sorting/pagination/page.html' target='viewer'>pagination</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='pagination%20%20sorting/sorting/page.html' target='viewer'>sorting</a></nobr><br/>
+</div>
+<nobr><tt>&nbsp;&nbsp;</tt>deploy</nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='trash' target='viewer'>Trash</a></nobr><br/>
+</div>
+</body></html>

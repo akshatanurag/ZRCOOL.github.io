@@ -1,0 +1,13 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>refactroring custom type resolvers</title>
+</head><body><span style="font-size: 12pt">As seen earlier, in order to setup a relationship b/w type we had to make seperate resolver fuctions and place the relationship methods within it. Where we would match the parent.id with the array. Like this...<br/>
+<br/>
+</span><img src="image.png"/><span style="font-size: 12pt"><br/>
+</span><span style="font-size: 12pt"><br/>
+Now since we have access to our original db, therefore we do not have to write custom resolver fucntions to setup relatioships as all this is already handled by prisma. So, we remove everything from the User resolver functions (as it overwrites the behaviour of prisma)<br/>
+<br/>
+</span><img src="image 2.png"/><br/>
+<br/>
+</body></html>

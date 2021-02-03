@@ -1,0 +1,27 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>basics</title>
+</head><body><span style="font-size: 12pt">Subscription is basically the API sending the data in real time. It uses Web Sockets in the backend to achieve this functionality. <br/>
+<br/>
+To achieve this we need to use PubSub provided by graphql yoga. It is configued like this<br/>
+<br/>
+<div style="text-align: center"><img src="image.png"/></div><br/>
+<br/>
+Now, in schema.graphql we make a resolver for our subscription <br/>
+<br/>
+<div style="text-align: center"><img src="image 2.png"/></div><br/>
+<br/>
+Now, in the resolvers we make a new file for all our subcriptions and add new method for the subscription named count<br/>
+<br/>
+<div style="text-align: center"><img src="image 3.png"/><br/>
+</div><div style="text-align: left">pubsub.publish is used to publish data to the client. While</div>pubsub.asyncIterator is used to establish a channel. <br/>
+<br/>
+<b>NOTE : </b>The name <b>count</b>of the channel in publish &amp; asyncIterator <ul><li style="list-style-type: none"><ul><li style="list-style-type: none">Also the name of the resolver is being used as an object here, and within that object we define different resolver methods</li>
+</ul>
+</li>
+</ul>
+<br/>
+<br/>
+<br/>
+</span></body></html>

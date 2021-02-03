@@ -1,0 +1,22 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>relationship b/w types</title>
+</head><body><span style="font-size: 12pt">Here we try to create a relationship between different types. In order todo so, in the typeDefs se a property equals to the other type which is related to the current type of data. <br/>
+</span><img src="image.png"/><span style="font-size: 12pt"><br/>
+</span><span style="font-size: 12pt">Example here Post is related to User so in post we make a new property callede author and set it's type as User.<br/>
+<br/>
+Now inorder to work with these relationships we need to make a custom resolver object <br/>
+</span><img src="image 2.png"/><br/>
+<br/>
+<br/>
+<span style="font-size: 12pt">Here we create a resolver method for Post and access the data of post via <b>parent . </b></span><br/>
+<img src="image 3.png"/><br/>
+<br/>
+This is how we query such a relatioship <br/>
+<img src="image 4.png"/><br/>
+<br/>
+<div style="text-align: center"><span style="font-size: 17pt"><b>Relationship Array<br/>
+<br/>
+</b></span></div><span style="font-size: 14pt">Relationship b/w array is nothing but set the return type of the schema to an<b>[ type ]</b></span><br/>
+</body></html>

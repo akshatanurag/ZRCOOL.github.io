@@ -1,0 +1,13 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>locking down fields</title>
+</head><body><span style="font-size: 12pt">It might so happen that we need to lockdown certain fields. Something that cannot be made public like the users hashed password or the email.<br/>
+<br/>
+In order to handle this issue we can either remove that field from the type or we can write custom resolver function for that particular field.<br/>
+<br/>
+</span><img src="image.png"/><span style="font-size: 12pt"><br/>
+</span><span style="font-size: 12pt"><br/>
+Now from here we can work on the logic that allows only certain fields to be displayed. Like here we are checking if the user is authenticated and then only allowing the email id to be displayed. <br/>
+<br/>
+A better way to do this would be with<b>fragments.</b></span></body></html>

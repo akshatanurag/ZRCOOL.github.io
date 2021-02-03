@@ -1,0 +1,35 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>fargments</title>
+</head><body><span style="font-size: 12pt">This basically provides us a resusable way to define a selection set. With gql fragments we can very easily define a type in gql playgroud and call it with<b>...notation. </b>Like this<br/>
+<br/>
+</span><div style="text-align: center"><img src="image.png"/></div><br/>
+<br/>
+<span style="font-size: 12pt">As seen here we have defined a fragment called userFields as passed it to the selection set. <br/>
+<br/>
+Now, in order to force a client to select a necessary field we can define fragments in our sever, which would ensure that the particular field is always selected. <br/>
+<br/>
+<b><u>Intregrating Prisma with GQL<br/>
+<br/>
+</u></b></span><img src="image 2.png"/><br/>
+<br/>
+<b>STEP 1:</b><span style="font-size: 12pt">Make a new file that hold all the resolver functctions like so<br/>
+</span><span style="font-size: 12pt"><br/>
+</span><img src="image 3.png"/><br/>
+<br/>
+<b>STEP 2: </b><span style="font-size: 13pt">Import resolver &amp; fragmentReplacements in app.js<br/>
+</span><span style="font-size: 13pt"><br/>
+</span><img src="image 4.png"/><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt"><br/>
+<b>STEP 3: </b>In prisma.js pass fragmentReplacements to Prisma Object<br/>
+<br/>
+</span><img src="image 5.png"/><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt"><br/>
+<b>Step 4: </b>Now we actually set the value of fragements in our resolver function somewhat like this<br/>
+<br/>
+</span><img src="image 6.png"/><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt"><br/>
+</span><span style="font-size: 13pt">This means that when ever someone makes a selection for posts in our user query we ensure that the selction field has got userID</span><br/>
+<br/>
+</body></html>
